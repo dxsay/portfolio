@@ -72,6 +72,13 @@
             border-radius: 8px;
         }
 
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -81,7 +88,30 @@
             bottom: 0;
             width: 100%;
         }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
     </style>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -104,19 +134,31 @@
         <h2>프로젝트</h2>
         <div class="projects">
             <div class="project">
-                <img src="https://via.placeholder.com/400" alt="프로젝트 1">
+                <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="프로젝트 1">
                 <h3>프로젝트 1</h3>
                 <p>이 프로젝트는 ...</p>
+                <button class="button" onclick="toggleInfo('project1-info')">더 보기</button>
+                <div id="project1-info" class="more-info">
+                    <p>프로젝트에 대한 자세한 설명입니다. 이 프로젝트는 사용자 경험을 향상시키기 위해 여러 기능을 개선했습니다.</p>
+                </div>
             </div>
             <div class="project">
-                <img src="https://via.placeholder.com/400" alt="프로젝트 2">
+                <img src="https://www.w3schools.com/w3images/forest.jpg" alt="프로젝트 2">
                 <h3>프로젝트 2</h3>
                 <p>이 프로젝트는 ...</p>
+                <button class="button" onclick="toggleInfo('project2-info')">더 보기</button>
+                <div id="project2-info" class="more-info">
+                    <p>프로젝트에 대한 자세한 설명입니다. 이 프로젝트는 데이터 분석 및 시각화 작업을 중점적으로 다뤘습니다.</p>
+                </div>
             </div>
             <div class="project">
-                <img src="https://via.placeholder.com/400" alt="프로젝트 3">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="프로젝트 3">
                 <h3>프로젝트 3</h3>
                 <p>이 프로젝트는 ...</p>
+                <button class="button" onclick="toggleInfo('project3-info')">더 보기</button>
+                <div id="project3-info" class="more-info">
+                    <p>프로젝트에 대한 자세한 설명입니다. 이 프로젝트는 최신 기술을 적용하여 개발되었습니다.</p>
+                </div>
             </div>
         </div>
     </section>
