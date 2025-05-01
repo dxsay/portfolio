@@ -1,1 +1,135 @@
-<h1>my Portfolio</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>내 포트폴리오</h1>
+    </header>
+
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>소개</h2>
+        <p>안녕하세요! 저는 UX/UI 디자이너이며, 다양한 산업에서 사용자 경험을 향상시키는 작업을 해왔습니다. 현재는 풍력 발전 O&M 플랫폼의 UX/UI 디자인 프로젝트에 참여하고 있습니다.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>프로젝트</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/400" alt="프로젝트 1">
+                <h3>프로젝트 1</h3>
+                <p>이 프로젝트는 ...</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/400" alt="프로젝트 2">
+                <h3>프로젝트 2</h3>
+                <p>이 프로젝트는 ...</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/400" alt="프로젝트 3">
+                <h3>프로젝트 3</h3>
+                <p>이 프로젝트는 ...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>연락처</h2>
+        <p>이메일: example@domain.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">링크드인 프로필</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 내 포트폴리오</p>
+    </footer>
+
+</body>
+</html>
